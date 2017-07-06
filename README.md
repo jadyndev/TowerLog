@@ -6,17 +6,16 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ## Installation
 
-### Du brauchst folgende Programme
+### Schritt 1: Du brauchst folgende Programme
 
 #### Einen Webserver
 Zum Beispiel Apache HTTP Server:
 
 [Apache Homepage](https://httpd.apache.org)
-
-Du kannst aber auch etwas anderes Verwenden.
 ```
 sudo apt install apache2
 ```
+Du kannst aber auch etwas anderes Verwenden.
 
 #### PHP 
 Du brauchst auch PHP, um die verbindung mit der SQL Datenbank herzustellen. (Falls jemand eine einfachere Lösung hat, einfach mal melden):
@@ -32,3 +31,6 @@ Außerdem ist ein SQL Server für die Datenbank erforderlich:
 ```
 sudo apt install mysql-server 
 ```
+
+### Schritt 2: Dateien kopieren
+Du kannst nun die Dateien von Github herunterladen und in das Verzeichnis Kopiert werden in dem der Webserver läuft, unter Linux meist `/var/www/html`.
