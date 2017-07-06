@@ -33,4 +33,15 @@ sudo apt install mysql-server
 ```
 
 ### Schritt 2: Dateien kopieren
-Du kannst nun die Dateien von Github herunterladen und in das Verzeichnis Kopiert werden in dem der Webserver läuft, unter Linux meist `/var/www/html`.
+Du kannst nun die Dateien von Github herunterladen und in das Verzeichnis Kopiert werden in dem der Webserver läuft, unter Linux meist `/var/www/html/`.
+
+Sobald du alle Dateien kopiert hast, kannst du auch schon die ersten Einstellungen treffen.
+
+### Schritt 3: Einstellungen
+#### Schritt 1: SQL Server
+* Erstelle einen Benutzer für TowerLog
+* Erstelle eine Datenbank auf dem Server, auf die der Nutzer zugreifen kann
+
+#### Schritt 2: `bin/ini.php` 
+* öffne die Datei `bin/ini.php`
+* Verändere die Datei wie, in ihr, beschrieben
