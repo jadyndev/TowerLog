@@ -11,7 +11,12 @@ $db_password = '[passwort]'; //Datenbank Benutzer Passwort. Das Passwort für de
 
 /*******************************************/
 
-//error_reporting(0);
+
+//Falls du selbst am System arbeiten willst kannst hier die Fehler Meldungen ausschalten.
+//Dazu einfach diese Zeile auskomentieren.
+error_reporting(0);
+
+
 session_start();
 
 if(!isset($no_sql)){
