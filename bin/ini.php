@@ -1,11 +1,13 @@
 <?php
 /***Folgender Code muss angepasst werden:***/
 
-$root_url = "http://192.168.178.34/TowerLog/"; //Die URL unter der das Logbuch erreichbar ist. z.B 127.0.0.1 oder example.com/Towerlog oder hostname/TowerLog
-$db_host = 'localhost';
-$db_name = 'towerlog';
-$db_user = 'root';
-$db_password = '';
+$root_url = "http://127.0.0.1/TowerLog/"; //Die URL unter der das Logbuch erreichbar ist. z.B 127.0.0.1 oder example.com/Towerlog oder hostname/TowerLog
+
+/*Datenbank*/
+$db_host = 'localhost';      //Datenbank Server: Hostname oder IP z.B localhost oder 127.0.0.1
+$db_name = 'towerlog';       //Datenbank die für die Speicherung der Logbücher gedacht ist. Empfohlen ist eine Datenbank mit dem Namen "towerlog"
+$db_user = '[name]';         //Datenbank Benutzer. Der Benutzer auf dem SQL Server
+$db_password = '[passwort]'; //Datenbank Benutzer Passwort. Das Passwort für den Benutzer auf dem SQL Server
 
 /*******************************************/
 
