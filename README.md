@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# TowerLog
 
 You can use the [editor on GitHub](https://github.com/DO9THW/TowerLog/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Installation
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Du brauchst folgende Programme
 
-```markdown
-Syntax highlighted code block
+#### Einen Webserver
+Zum Beispiel Apache HTTP Server:
 
-# Header 1
-## Header 2
-### Header 3
+[Apache Homepage](https://httpd.apache.org)
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Du kannst aber auch etwas anderes Verwenden.
+```
+sudo apt install apache2
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### PHP 
+Du brauchst auch PHP, um die verbindung mit der SQL Datenbank herzustellen. (Falls jemand eine einfachere Lösung hat, einfach mal melden):
 
-### Jekyll Themes
+[PHP Homepage](https://php.net)
+```
+sudo apt install php 
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DO9THW/TowerLog/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#### SQL Server
+Außerdem ist ein SQL Server für die Datenbank erforderlich:
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```
+sudo apt install mysql-server 
+```
