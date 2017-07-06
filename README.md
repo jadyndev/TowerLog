@@ -1,8 +1,15 @@
 # TowerLog
 
-You can use the [editor on GitHub](https://github.com/DO9THW/TowerLog/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+TowerLog ist ein freies Logbuch für den Amateurfunk.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Es läuft auf _fast_ allen Geräten, da die Benutzung über den Browser (Firefox, Chromium, Chrome, Opera sind Empfohlen) erfolgt.
+
+Außerdem können mehrere Nutzer __gleichzeitig__ ein Logbuch nutzen.
+
+Daher ist es besonders für Club- und Contest-Stationen geeignet.
+
+
+
 
 ## Installation
 
