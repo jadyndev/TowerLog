@@ -1,0 +1,5 @@
+{
+  "call": "RUFZEICHEN",
+  "pw": "PASSWORT",
+  "allowed_logs": ["LOG1", "LOG2"]
+}
