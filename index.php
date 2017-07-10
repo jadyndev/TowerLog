@@ -18,5 +18,4 @@ if($_SESSION["call-sign"] == null){
     break;
   }
 }
-mysql_close($mysql);
 ?>
