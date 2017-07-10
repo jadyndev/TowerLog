@@ -5,7 +5,7 @@ $log = mysql_real_escape_string($_SESSION["log"]);
 if(in_array($log, $_SESSION['json']->allowed_logs)){
     // Ausführen einer SQL-Anfrage
     $query = "SELECT * FROM `$log` WHERE `call` LIKE '$call%' ORDER BY `id` DESC";
-    $result = mysql_query($query) or die("Anfrage fehlgeschlagen: " . mysql_error());
+    $result = $mysql->query($query) or die("Anfrage fehlgeschlagen: " . $mysql->error);
 
     // Ausgabe der Ergebnisse in HTML
     ?>
@@ -28,7 +28,7 @@ if(in_array($log, $_SESSION['json']->allowed_logs)){
     </thead>
     <tbody>
     <?
-    while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+    while ($line = $result->fetch_assoc()) {
       echo "<tr>";
       foreach ($line as $col_value) {
           echo "\t\t<td>$col_value</td>\n";

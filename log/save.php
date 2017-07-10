@@ -16,7 +16,7 @@ $log = mysql_real_escape_string($_SESSION["log"]);
 if(in_array($log, $_SESSION['json']->allowed_logs)){
   //Speichern
   $query = "INSERT INTO `$log` (`id`, `call`, `freq`, `date`, `utc`, `rsts`, `rstr`, `qth`, `name`, `dok`, `mode`, `op`) VALUES (NULL, '$call', '$freq', '$date', '$utc', '$rsts', '$rstr', '$qth', '$name', '$dok', '$mode', '$op')";
-  $result = mysql_query($query) or die("Anfrage fehlgeschlagen: " . mysql_error());
+  $result = $mysql->query($query) or die("Anfrage fehlgeschlagen: " . $mysql->error);
 
 
 
