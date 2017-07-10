@@ -99,18 +99,23 @@ function time_set(){
   time_click = true;
 }
 
+//Groß Schreibung
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
 //Log absenden
 function save_log(){
-          var call = $('input[name=call]').val();
+          var call = $('input[name=call]').val().toUpperCase();
           var date = $('input[name=date]').val();
           var UTC = $('input[name=UTC]').val();
           var RSTS = $('input[name=RSTS]').val();
           var RSTR = $('input[name=RSTR]').val();
           var FREQ = $('input[name=FREQ]').val();
-          var QTH = $('input[name=QTH]').val();
-          var name = $('input[name=name]').val();
-          var DOK = $('input[name=DOK]').val();
-          var mode = $('input[name=mode]').val();
+          var QTH = $('input[name=QTH]').val().capitalize();
+          var name = $('input[name=name]').val().capitalize();
+          var DOK = $('input[name=DOK]').val().toUpperCase();
+          var mode = $('input[name=mode]').val().toUpperCase();
 
           if(call != "" && RSTS != "" && RSTR != "" && FREQ != "" && mode != ""){
             $.post("log/save.php",

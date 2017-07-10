@@ -18,8 +18,8 @@ switch ($_GET['mode']) {
         <select name="log" placeholder="Logbuch">
           <?php
           $query = "SHOW TABLES";
-          $result = mysql_query($query) or die("Anfrage fehlgeschlagen: " . mysql_error());
-          while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+          $result = $mysql->query($query) or die("Anfrage fehlgeschlagen: " . $mysql->error);
+          while ($line = $result->fetch_assoc()) {
               echo "<tr>";
               foreach ($line as $col_value) {
                   if(in_array($col_value, $_SESSION['json']->allowed_logs)){
