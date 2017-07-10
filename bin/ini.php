@@ -13,6 +13,8 @@ $db_password = ''; //Datenbank Benutzer Passwort. Das Passwort für den Benutzer
 
 //error_reporting(0);
 session_start();
+$_SESSION['TowerLogVersion'] = "0.0.1";
+
 
 if(!isset($no_sql)){
   $mysql = new mysqli($db_host, $db_user, $db_password, $db_name);
