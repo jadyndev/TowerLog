@@ -52,3 +52,25 @@ Sobald du alle Dateien kopiert hast, kannst du auch schon die ersten Einstellung
 #### Schritt 2: `bin/ini.php` 
 * öffne die Datei `bin/ini.php`
 * Verändere die Datei wie, in ihr, beschrieben
+
+#### Schritt 3: Das erste Log
+* Öffne nun das Logbuch und gehe auf `[URL zum Log]/admin`, das ganze funktioniert allerdings nur auf dem Rechner auf dem der Server läuft.
+* Gehe auf `Neues Logbuch` und erstelle dein Logbuch
+
+### Schritt 4: User
+Gehe in den Ordner `users` und kopiere die Datei `example.json` und bennene sie in `[Benutzername].json` um.
+
+Öffne die Datei:
+* Trage in `"call"` das Rufzeichen, in Druckbuchstaben, ein.
+* Trage in `"pw"` das Passwort des Nutzers ein.
+* Trage in `"allowed_logs"` alle Logbücher ein die ein User verwenden darf.
+
+Die Datei sollte so aussehen:
+```
+{
+  "call": "RUFZEICHEN",
+  "pw": "PASSWORT",
+  "allowed_logs": ["LOG1", "LOG2"]
+}
+```
+__Das User System wird noch überarbeitet!__
