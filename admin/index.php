@@ -1,40 +1,40 @@
 <?php
 if($_SERVER['REMOTE_ADDR'] == $_SERVER['SERVER_ADDR']){
-  switch ($_GET['tool']) {
-    include("../bin/ini.php");
-    include("../bin/header.php");
-    //Tools
+  include("../bin/ini.php");
+  include("../bin/header.php");
 
-    //Neues Log
-    if(isset($_GET['new_log'])){
-      $new_log_name = mysql_real_escape_string($_POST['log']);
 
-      $query = "CREATE TABLE IF NOT EXISTS `$new_log_name` (
-        `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-        `call` varchar(255) NOT NULL,
-        `freq` int(11) NOT NULL,
-        `mode` varchar(255) NOT NULL,
-        `date` date NOT NULL,
-        `utc` time NOT NULL,
-        `rsts` int(11) NOT NULL,
-        `rstr` int(11) NOT NULL,
-        `qth` varchar(255) NOT NULL,
-        `name` varchar(255) NOT NULL,
-        `dok` varchar(255) NOT NULL,
-        `op` varchar(255) NOT NULL
-      ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;";
-      $result = $mysql->query($query) or $mysql_error = true;
-      
-      if($mysql_error){
-        $_GET['tool'] = "error";
-        $error_msg = "Es ist ein <b>MSQL-Fehler</b> beim erstellen des Logbuchs aufgetreten: ".$mysql->error;
-      }else{
-        $_GET['tool'] = "msg";
-        $msg_msg = "Logbuch wurde erstellt. Vergiss nicht die User-Dateien entsprechend anzupassen!";
-      }
+  //Tools
+  //Neues Log
+  if(isset($_GET['new_log'])){
+    $new_log_name = mysql_real_escape_string($_POST['log']);
+
+    $query = "CREATE TABLE IF NOT EXISTS `$new_log_name` (
+      `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+      `call` varchar(255) NOT NULL,
+      `freq` int(11) NOT NULL,
+      `mode` varchar(255) NOT NULL,
+      `date` date NOT NULL,
+      `utc` time NOT NULL,
+      `rsts` int(11) NOT NULL,
+      `rstr` int(11) NOT NULL,
+      `qth` varchar(255) NOT NULL,
+      `name` varchar(255) NOT NULL,
+      `dok` varchar(255) NOT NULL,
+      `op` varchar(255) NOT NULL
+    ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;";
+    $result = $mysql->query($query) or $mysql_error = true;
+
+    if($mysql_error){
+      $_GET['tool'] = "error";
+      $error_msg = "Es ist ein <b>MSQL-Fehler</b> beim erstellen des Logbuchs aufgetreten: ".$mysql->error;
+    }else{
+      $_GET['tool'] = "msg";
+      $msg_msg = "Logbuch wurde erstellt. Vergiss nicht die User-Dateien entsprechend anzupassen!";
     }
+  }
 
-
+  switch ($_GET['tool']) {
     //Seite
     case 'new_log':
     ?>
