@@ -74,3 +74,5 @@ Die Datei sollte so aussehen:
 }
 ```
 __Das User System wird noch überarbeitet!__
+
+#### Du hast nun alle Einstellungen vorgenommen. Nun kannst du das Logbuch verwenden.
