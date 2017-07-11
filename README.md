@@ -82,6 +82,7 @@ __Das User System wird noch überarbeitet!__
 ### 0.0.2
 * Zugang zum Admin-Bereich nun über `ini.php` einstellbar
 * Automatische Update Suche, auch über `ini.php` an/ausschaltbar
+* Bugfix beim Logbuch erstellen
 ##### Veränderte Dateien:
 ```
 /admin/index.php
