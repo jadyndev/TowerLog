@@ -76,3 +76,18 @@ Die Datei sollte so aussehen:
 __Das User System wird noch überarbeitet!__
 
 #### Du hast nun alle Einstellungen vorgenommen. Nun kannst du das Logbuch verwenden.
+
+## Update Verlauf
+
+### 0.0.2
+* Zugang zum Admin-Bereich nun über `ini.php` einstellbar
+* Automatische Update Suche, auch über `ini.php` an/ausschaltbar
+##### Veränderte Dateien:
+```
+/admin/index.php
+/bin/ini.php
+```
+
+
+### 0.0.1
+* Erste Version
