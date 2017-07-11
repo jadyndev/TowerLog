@@ -1,7 +1,31 @@
 <?php
-if($_SERVER['REMOTE_ADDR'] == $_SERVER['SERVER_ADDR']){
-  include("../bin/ini.php");
-  include("../bin/header.php");
+include("../bin/ini.php");
+include("../bin/header.php");
+
+switch ($admin_zugang) {
+  case 'local':
+    if($_SERVER['REMOTE_ADDR'] == $_SERVER['SERVER_ADDR']){
+      $admin_zugang = true;
+    }
+  break;
+
+  case 'all':
+    $admin_zugang = true;
+  break;
+
+  case 'none':
+    $admin_zugang = false;
+  break;
+
+  default:
+    if($_SERVER['REMOTE_ADDR'] == $_SERVER['SERVER_ADDR']){
+      $admin_zugang = true;
+    }
+  break;
+}
+
+if($admin_zugang){
+
 
 
   //Tools
