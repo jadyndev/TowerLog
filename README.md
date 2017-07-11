@@ -83,7 +83,9 @@ __Das User System wird noch überarbeitet!__
 * Zugang zum Admin-Bereich nun über `ini.php` einstellbar
 * Automatische Update Suche, auch über `ini.php` an/ausschaltbar
 * Bugfix beim Logbuch erstellen
+
 __`ini.php` muss nach dem UPDATE neu angepasst werden__
+
 Erstelle am Besten in Backup vom `ini.php`
 ##### Veränderte Dateien:
 ```
