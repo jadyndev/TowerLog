@@ -64,13 +64,15 @@ Gehe in den Ordner `users` und kopiere die Datei `example.json` und bennene sie 
 * Trage in `"call"` das Rufzeichen, in Druckbuchstaben, ein.
 * Trage in `"pw"` das Passwort des Nutzers ein.
 * Trage in `"allowed_logs"` alle Logbücher ein die ein User verwenden darf.
+* Trage in `"my_location"` den Locator des OM's ein.
 
 Die Datei sollte so aussehen:
 ```
 {
   "call": "RUFZEICHEN",
   "pw": "PASSWORT",
-  "allowed_logs": ["LOG1", "LOG2"]
+  "allowed_logs": ["LOG1", "LOG2"],
+  "my_location": "LOCATOR"
 }
 ```
 __Das User System wird noch überarbeitet!__
@@ -78,6 +80,22 @@ __Das User System wird noch überarbeitet!__
 #### Du hast nun alle Einstellungen vorgenommen. Nun kannst du das Logbuch verwenden.
 
 ## Update Verlauf
+### 0.0.3
+* Export in ADIF nun möglich.
+* Eingabe des Eigenen Locators.
+* Kleinere Änderungen am Interface des Logbuches.
+
+##### Veränderte Dateien:
+```
+/bin/log.php
+/bin/css.css
+/bin/log_export.php
+/bin/export-adif.php
+/bin/menu.php
+/bin/session.php
+/users/example.json
+/index.php
+```
 
 ### 0.0.2
 * Zugang zum Admin-Bereich nun über `ini.php` einstellbar
