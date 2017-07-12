@@ -93,6 +93,7 @@ __Das User System wird noch überarbeitet!__
 /bin/export-adif.php
 /bin/menu.php
 /bin/session.php
+/bin/log_menu.php
 /users/example.json
 /index.php
 ```
