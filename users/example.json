@@ -1,5 +1,6 @@
 {
   "call": "RUFZEICHEN",
   "pw": "PASSWORT",
-  "allowed_logs": ["LOG1", "LOG2"]
+  "allowed_logs": ["LOG1", "LOG2"],
+  "my_location": "LOCATOR"
 }
