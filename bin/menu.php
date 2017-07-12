@@ -3,6 +3,8 @@
     <h1>TowerLog</h1>
       <button onclick="button('QSO')">Logbuch &#xd6;ffnen</button>
       <br><br>
+      <button onclick="button('EXPORT')">Logbuch exportieren</button>
+      <br><br>
       <button onclick="button('abmelden')">Abmelden</button>
   </div>
 </div>
@@ -14,6 +16,9 @@ function button(func){
      break;
      case "abmelden":
        window.location = "bin/session.php?tool=logout";
+     break;
+     case "EXPORT":
+       window.location = "bin/session.php?tool=log_export";
      break;
    }
 }

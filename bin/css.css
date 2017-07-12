@@ -157,6 +157,20 @@ body {
   box-sizing: border-box;
   font-size: 14px;
 }
+
+.log select {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  width: 100%;
+  height: 60px;
+  background: #b3b3b3;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
 .log button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;

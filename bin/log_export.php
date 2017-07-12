@@ -1,9 +1,9 @@
 <?php
 //Log öffnen Code
 if(isset($_GET['log'])){
-  $_SESSION['log'] = $_POST['log'];
-  $_SESSION['page'] = "log";
-  header('Location: '.$root_url);
+  $log = $_POST['log'];
+
+  $_GET['mode'] = 'export';
 }
 
 switch ($_GET['mode']) {
@@ -30,9 +30,9 @@ switch ($_GET['mode']) {
           }
           ?>
         </select>
-        <button id="button">Logbuch &#xf6;ffnen</button>
+        <button id="button">Logbuch exportieren</button>
       </form>
-      <button onclick="go_back();" id="button">Zur&#xdc;ck</button>
+      <button onclick="go_home();" id="button">Zur&#xdc;ck</button>
     </div>
   </div>
   <?php
@@ -50,6 +50,20 @@ switch ($_GET['mode']) {
   </div>
   <?php
   break;
+
+  case 'export':
+  ?>
+  <div class="login-page">
+    <div class="form">
+      <h1>TowerLog</h1>
+      <h3>Export</h3>
+      <a>Das Logbuch "<?php echo $log; ?>" wurde als ADIF exportiert</a>
+      <button onclick="download('<?php echo $log; ?>')" id="button">Speichern</button><br><br>
+      <button onclick="go_home();" id="button">Zur&#xdc;ck</button>
+    </div>
+  </div>
+  <?php
+  break;
 }
 ?>
 
@@ -62,6 +76,10 @@ function enable(){
 
 function new_log(){
     window.location = "?mode=new_log";
+}
+
+function download(log){
+    window.location = "bin/export-adif.php?log=" + log;
 }
 
 function open_log(){
