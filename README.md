@@ -94,6 +94,7 @@ __Das User System wird noch überarbeitet!__
 /bin/menu.php
 /bin/session.php
 /bin/log_menu.php
+/bin/ini.php
 /users/example.json
 /index.php
 ```
