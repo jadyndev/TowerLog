@@ -1,5 +1,5 @@
 <?php
-$TowerLogVersion = "0.0.2";
+$TowerLogVersion = "0.0.3";
 /***Folgender Code muss angepasst werden:***/
 
 $root_url = "http://[HOSTNAME / IP]/TowerLog/"; //Die URL unter der das Logbuch erreichbar ist. z.B 127.0.0.1 oder example.com/Towerlog oder hostname/TowerLog
