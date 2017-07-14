@@ -80,6 +80,16 @@ __Das User System wird noch überarbeitet!__
 #### Du hast nun alle Einstellungen vorgenommen. Nun kannst du das Logbuch verwenden.
 
 ## Update Verlauf
+## 0.0.4
+* Update auf PHP 7.0
+* mysql nun komplett über msqli
+
+##### Veränderte Dateien:
+```
+Alle Dateien (Teilweise nur minimale Änderungen)
+```
+Ein Update der `/bin/ini.php` ist nicht nötig!
+
 ### 0.0.3
 * Export in ADIF nun möglich.
 * Eingabe des Eigenen Locators.
