@@ -1,7 +1,7 @@
 <?php
 //Log öffnen Code
 if(isset($_GET['log'])){
-  $log = $_POST['log'];
+  $log = $mysql->real_escape_string($_POST['log']);
 
   $_GET['mode'] = 'export';
 }

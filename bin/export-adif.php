@@ -10,7 +10,7 @@ if(in_array($_GET['log'], $_SESSION['json']->allowed_logs)){
 
     //Datenbank export
     // Ausführen einer SQL-Anfrage
-    $log = mysql_real_escape_string($_GET['log']);
+    $log = $mysql->real_escape_string($_GET['log']);
     $query = "SELECT * FROM `$log` ORDER BY `id`";
     $result = $mysql->query($query) or die("Anfrage fehlgeschlagen: " . $mysql->error);
 
