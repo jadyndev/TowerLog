@@ -1,7 +1,7 @@
 <?php
 include("../bin/ini.php");
-$call = mysql_real_escape_string($_GET["call_filter"]);
-$log = mysql_real_escape_string($_SESSION["log"]);
+$call = $mysql->real_escape_string($_GET["call_filter"]);
+$log = $mysql->real_escape_string($_SESSION["log"]);
 if(in_array($log, $_SESSION['json']->allowed_logs)){
     // Ausführen einer SQL-Anfrage
     $query = "SELECT * FROM `$log` WHERE `call` LIKE '$call%' ORDER BY `id` DESC";
@@ -27,7 +27,7 @@ if(in_array($log, $_SESSION['json']->allowed_logs)){
       </tr>
     </thead>
     <tbody>
-    <?
+    <?php
     while ($line = $result->fetch_assoc()) {
       echo "<tr>";
       foreach ($line as $col_value) {
