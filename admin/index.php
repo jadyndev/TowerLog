@@ -31,7 +31,7 @@ if($admin_zugang){
   //Tools
   //Neues Log
   if(isset($_GET['new_log'])){
-    $new_log_name = mysql_real_escape_string($_POST['log']);
+    $new_log_name = $mysql->real_escape_string($_POST['log']);
 
     $query = "CREATE TABLE IF NOT EXISTS `$new_log_name` (
       `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
