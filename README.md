@@ -88,7 +88,7 @@ __Das User System wird noch überarbeitet!__
 ```
 Alle Dateien (Teilweise nur minimale Änderungen)
 ```
-Ein Update der `/bin/ini.php` ist nicht nötig!
+Ein Update der `/bin/ini.php` sowie aller User in `/users/` ist nicht nötig!
 
 ### 0.0.3
 * Export in ADIF nun möglich.
