@@ -2,7 +2,7 @@
 
 TowerLog ist ein freies Logbuch für den Amateurfunk.
 
-Es läuft auf _fast_ allen Geräten, da die Benutzung über den Browser (Firefox, Chromium, Chrome, Opera sind Empfohlen) erfolgt.
+Es läuft auf _fast_ allen Geräten, da die Benutzung über den Browser (Firefox, Chromium, Chrome und Opera werden empfohlen) erfolgt.
 
 Außerdem können mehrere Nutzer __gleichzeitig__ ein Logbuch nutzen.
 
@@ -22,10 +22,10 @@ Zum Beispiel Apache HTTP Server:
 ```
 sudo apt install apache2
 ```
-Du kannst aber auch etwas anderes Verwenden.
+Du kannst aber auch einen anderen Server verwenden.
 
 #### PHP 
-Du brauchst auch PHP, um die verbindung mit der SQL Datenbank herzustellen. (Falls jemand eine einfachere Lösung hat, einfach mal melden):
+Du brauchst auch PHP, um die Verbindung mit der SQL Datenbank herzustellen (falls jemand eine einfachere Lösung hat, einfach mal melden):
 
 [PHP Homepage](https://php.net)
 ```
@@ -51,7 +51,7 @@ Sobald du alle Dateien kopiert hast, kannst du auch schon die ersten Einstellung
 
 #### Schritt 2: `bin/ini.php` 
 * öffne die Datei `bin/ini.php`
-* Verändere die Datei wie, in ihr, beschrieben
+* Verändere die Datei wie in ihr beschrieben
 
 #### Schritt 3: Das erste Log
 * Öffne nun das Logbuch und gehe auf `[URL zum Log]/admin`, das ganze funktioniert allerdings nur auf dem Rechner auf dem der Server läuft.
